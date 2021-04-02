@@ -5,6 +5,7 @@
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 @import 'libs/btn';
+@import 'libs/card';
 @import url('fontawesome-all.min.css');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600');
 
@@ -210,7 +211,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: rgb(17, 17, 17);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 19pt;
   font-weight: 300;
@@ -941,15 +942,15 @@ button,
     }
 
     &.two {
-      background-color: #f5fafa;
+      background-color: #ddf7f2;
     }
 
     &.three {
-      background-color: #ecf1f1;
+      background-color: #070707;
     }
 
     &.four {
-      background-color: #e8edec;
+      background-color: #080808;
     }
   }
 }
