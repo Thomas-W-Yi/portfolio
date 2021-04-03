@@ -1,3 +1,55 @@
+#row1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  #card1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+      background: url('../../../images/schedular.gif') no-repeat center center;
+      background-size: 90%;
+    }
+  }
+  #card2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+      background: url('../../../images/Speakio.gif') no-repeat center center;
+      background-size: 90%;
+    }
+  }
+}
+#row2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  #card3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+      background: url('../../../images/mapit.gif') no-repeat center center;
+      background-size: 90%;
+    }
+  }
+  #card4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .container .card {
   position: relative;
   width: 380px;
@@ -26,6 +78,7 @@
 .container .card:hover .content {
   transform: translateY(0px);
   opacity: 1;
+  backdrop-filter: blur(10px);
 }
 
 .container .card .content h2 {
@@ -45,8 +98,8 @@
 
 .container .card .content p {
   font-size: 1em;
-  color: #fff;
-  font-weight: 300;
+  color: black;
+  font-weight: 500;
 }
 
 .container .card .content a {
