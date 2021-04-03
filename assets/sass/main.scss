@@ -386,26 +386,26 @@ br.clear {
 /* Row */
 
 .row {
-  @include html-grid((40px, 40px));
+  @include html-grid((20px, 20px, 20px, 20px));
 
   @include breakpoint('wide') {
-    @include html-grid((40px, 40px), 'wide');
+    @include html-grid((20px, 20px, 20px, 20px), 'wide');
   }
 
   @include breakpoint('normal') {
-    @include html-grid((40px, 40px), 'normal');
+    @include html-grid((20px, 20px, 20px, 20px), 'normal');
   }
 
   @include breakpoint('narrow') {
-    @include html-grid((20px, 20px), 'narrow');
+    @include html-grid((10px, 10px, 10px, 10px), 'narrow');
   }
 
   @include breakpoint('<=narrower') {
-    @include html-grid((20px, 20px), 'narrower');
+    @include html-grid((10px, 10px, 10px, 10px), 'narrower');
   }
 
   @include breakpoint('<=mobile') {
-    @include html-grid((20px, 20px), 'mobile');
+    @include html-grid((20px, 20px, 20px, 20px), 'mobile');
   }
 }
 
@@ -942,7 +942,8 @@ button,
     }
 
     &.two {
-      background-color: #ddf7f2;
+      background: url('../../images/two.jpg') no-repeat center center;
+      background-size: cover;
     }
 
     &.three {
