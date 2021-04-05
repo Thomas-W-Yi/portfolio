@@ -1,4 +1,4 @@
-VanillaTilt.init(document.querySelectorAll('.card'), {
+VanillaTilt.init(document.querySelectorAll('.cards'), {
   max: 25,
   speed: 400,
   glare: true,
