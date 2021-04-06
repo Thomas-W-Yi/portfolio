@@ -1,7 +1,13 @@
-$('.panel-collapse').on('show.bs.collapse', function () {
-  $(this).siblings('.panel-heading').addClass('active');
-});
+// const accordion = $('.contentBx');
+// console.log(`panel.js`, accordion);
 
-$('.panel-collapse').on('hide.bs.collapse', function () {
-  $(this).siblings('.panel-heading').removeClass('active');
+// accordion.forEach((box) => {
+//   box.on('click', function () {
+//     console.log(`lable clicked`, this);
+//   });
+// });
+$(document).on('click', '.contentBx', function (e) {
+  $(this).toggleClass('active');
+  console.log(`lable clicked`, this);
+  e.preventDefault();
 });

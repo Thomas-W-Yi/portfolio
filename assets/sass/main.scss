@@ -7,6 +7,7 @@
 @import 'libs/btn';
 @import 'libs/card';
 @import 'libs/panel';
+@import 'libs/neon';
 @import url('fontawesome-all.min.css');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600');
 
@@ -824,10 +825,11 @@ button,
       a {
         display: block;
         padding: 0.5em 1.5em 0.5em 1.5em;
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(128, 128, 128, 0.35);
         text-decoration: none;
         outline: 0;
         border: 0;
+        border-radius: 5px;
         backdrop-filter: blur(2px);
         transition: 0.5s;
         overflow: hidden;
@@ -841,7 +843,7 @@ button,
           &:before {
             position: absolute;
             left: 0;
-            color: #41484c;
+            color: rgba(128, 128, 128, 0.35);
             text-align: center;
             width: 1.25em;
             line-height: 1.75em;
@@ -853,10 +855,10 @@ button,
           position: absolute;
           top: 0;
           left: 0;
-          width: 50px;
+          width: 100px;
           height: 100%;
-          background: rgba(255, 255, 255, 0.5);
-          transform: skewX(45deg) translateX(280px);
+          background: rgba(128, 128, 128, 0.35);
+          transform: skewX(45deg) translateX(450px);
           transition: 0.5s;
         }
 
@@ -865,7 +867,7 @@ button,
         }
 
         &.active {
-          background: rgba(255, 255, 255, 0.1);
+          background: rgba(128, 128, 128, 0.35);
           box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
           overflow: hidden;
           border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -969,11 +971,13 @@ button,
     &.two {
       background: url('../../images/two.jpg') no-repeat center center;
       background-size: cover;
+      padding: 0;
     }
 
     &.three {
       background: url('../../images/pic04.jpg') no-repeat center center;
       background-size: cover;
+      padding: 0;
     }
 
     &.four {

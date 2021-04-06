@@ -1,24 +1,40 @@
-footer .container-btn {
+#top {
+  padding-top: 0%;
+}
+
+.container-intro {
+  header {
+    h2 {
+      letter-spacing: 5px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+footer .container-btns {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.container-btn {
+.container-btns {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.container-btn .btn {
+.container-btns .btns {
   position: relative;
   width: 155px;
   height: 50px;
   margin: 20px;
 }
 
-.container-btn .btn a {
+.container-btns .btns a {
   position: absolute;
   top: 0;
   left: 0;
@@ -42,11 +58,11 @@ footer .container-btn {
   backdrop-filter: blur(15px);
 }
 
-.container-btn .btn:hover a {
+.container-btns .btns:hover a {
   letter-spacing: 3px;
 }
 
-.container-btn .btn a::before {
+.container-btns .btns a::before {
   content: '';
   position: absolute;
   top: 0;
@@ -58,11 +74,11 @@ footer .container-btn {
   transition: 0.5s;
 }
 
-.container-btn .btn:hover a::before {
+.container-btns .btns:hover a::before {
   transform: skewX(45deg) translateX(200%);
 }
 
-.container-btn .btn::before {
+.container-btns .btns::before {
   content: '';
   position: absolute;
   left: 50%;
@@ -76,7 +92,7 @@ footer .container-btn {
   transition-delay: 0s;
 }
 
-.container-btn .btn:hover::before {
+.container-btns .btns:hover::before {
   bottom: 0;
   height: 50%;
   width: 80%;
@@ -84,7 +100,7 @@ footer .container-btn {
   transition-delay: 0.05s;
 }
 
-.container-btn .btn::after {
+.container-btns .btns::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -98,7 +114,7 @@ footer .container-btn {
   transition-delay: 0s;
 }
 
-.container-btn .btn:hover::after {
+.container-btns .btns:hover::after {
   top: 0;
   height: 50%;
   width: 80%;
@@ -106,8 +122,8 @@ footer .container-btn {
   transition-delay: 0.05s;
 }
 
-.container-btn .btn:nth-child(1)::before,
-.container-btn .btn:nth-child(1)::after {
+.container-btns .btns:nth-child(1)::before,
+.container-btns .btns:nth-child(1)::after {
   background: #8ebebc;
   box-shadow: 0 0 5px #8ebebc, 0 0 15px #8ebebc, 0 0 30px #8ebebc,
     0 0 60px #8ebebc;
