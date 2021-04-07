@@ -28,13 +28,18 @@
       h2 {
         // text-align: left;
 
-        color: white;
+        color: whitesmoke;
       }
+    }
+    p {
+      color: whitesmoke;
+      text-align: left;
+      margin-left: 5%;
     }
   }
 
   .accordion {
-    max-width: 100%;
+    max-width: 90%;
 
     .contentBx {
       position: relative;
@@ -49,9 +54,19 @@
         text-align: left;
         width: 100%;
         padding: 10px;
-        background: #8ebebc;
+        background: rgba(128, 128, 128, 0.25);
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
         color: #fff;
         cursor: pointer;
+        border-radius: 8px;
+      }
+
+      &.active .label {
+        border-radius: 8px 8px 0px 0px;
+        background: rgba(142, 190, 188, 0.7);
       }
 
       .label::before {
@@ -69,16 +84,21 @@
 
       .content {
         position: relative;
-        background: #fff;
+        background: rgba(128, 128, 128, 0.35);
+        color: whitesmoke;
         height: 0;
         overflow: hidden;
         transition: 0.5s;
         overflow-y: auto;
+        border-radius: 15px;
+        width: 100%;
+        text-align: left;
       }
 
       &.active .content {
-        height: 150px;
+        height: 20%;
         padding: 10px;
+        border-radius: 0px 0px 8px 8px;
       }
     }
   }

@@ -1,0 +1,24 @@
+#fader1 {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+#fader1.appear {
+  opacity: 1;
+}
+#fader2 {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+#fader2.appear {
+  opacity: 1;
+}
+#fader3 {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+#fader3.appear {
+  opacity: 1;
+}
