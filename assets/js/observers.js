@@ -1,9 +1,8 @@
 const fader1 = $('#fader1');
 const fader2 = $('#fader2');
 const fader3 = $('#fader3');
-console.log(fader1, fader2, fader3);
 const sectionOptions = {
-  rootMargin: '-200px',
+  rootMargin: '-400px',
   threshold: 0,
 };
 

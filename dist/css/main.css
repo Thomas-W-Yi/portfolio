@@ -410,6 +410,7 @@ footer .container-btns {
   color: whitesmoke;
   text-align: left;
   margin-left: 5%;
+  margin-bottom: 8px;
 }
 
 .container-about .accordion {
@@ -480,7 +481,21 @@ footer .container-btns {
   overflow-y: auto;
   border-radius: 15px;
   width: 100%;
+}
+
+.container-about .accordion .contentBx .content p {
   text-align: left;
+  margin-bottom: 20px;
+}
+
+.container-about .accordion .contentBx .content p span {
+  margin-left: 2%;
+}
+
+.container-about .accordion .contentBx .content img {
+  width: 90%;
+  opacity: 80%;
+  border-radius: 8px;
 }
 
 .container-about .accordion .contentBx.active .content {
@@ -503,10 +518,6 @@ footer .container-btns {
           align-items: center;
   height: 30vh;
   font-family: 'Bad Script', cursive;
-}
-
-.neon a {
-  text-decoration: none;
 }
 
 .neon h1 {
@@ -665,6 +676,37 @@ footer .container-btns {
     -webkit-filter: blur(0px);
             filter: blur(0px);
     text-shadow: 0 0 10px none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .neon {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 30vh;
+    font-family: 'Bad Script', cursive;
+  }
+  .neon h1 {
+    margin: 0;
+    padding: 0%;
+    color: whitesmoke;
+    font-size: 2em;
+  }
+  .neon h1 span {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    -webkit-animation: animate 3s linear;
+            animation: animate 3s linear;
   }
 }
 

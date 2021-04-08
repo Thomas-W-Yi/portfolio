@@ -1,0 +1,91 @@
+.content .box2 .neumorphic-slider {
+  position: relative;
+  display: block;
+  top: 28px;
+}
+
+.neumorphic-slider {
+  width: 80%;
+  margin: auto;
+}
+
+.neumorphic-slider__back {
+  height: 15px;
+  background-color: var(--back-color);
+  border-radius: 50px;
+  background: rgba(128, 128, 128, 0.25);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(1px);
+  color: #fff;
+  cursor: pointer;
+}
+
+.neumorphic-slider {
+  width: 80%;
+  position: absolute;
+}
+
+.neumorphic-slider__back {
+  width: calc(100% + 20px);
+  margin-left: -10px;
+}
+
+.neumorphic-slider__line {
+  height: 10px;
+  background: linear-gradient(to right, #185ef0, #30cfd0);
+  margin-top: -12px;
+  margin-left: -6px;
+  border-radius: 8px;
+  opacity: 1;
+  width: calc(var(--value) + 4px);
+}
+
+.neumorphic-slider__thumb {
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+    0px 0px 15px rgba(55, 84, 170, 0.3);
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(250, 246, 246, 0.8);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  left: var(--value);
+  top: 1px;
+  margin-left: -10px;
+  cursor: pointer;
+}
+
+.neumorphic-slider__popover {
+  position: absolute;
+  background-color: var(--back-color);
+  left: var(--value);
+  font-weight: 600;
+  width: 60px;
+  height: 35px;
+  top: -40px;
+  margin-left: -30px;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  color: whitesmoke;
+  border-radius: 8px;
+  padding: 8px 0;
+  text-align: center;
+}
+
+// .neumorphic-slider__popover::after {
+//   content: '';
+//   position: absolute;
+//   width: 0;
+//   height: 0;
+//   bottom: -6px;
+//   left: 50%;
+//   margin-left: -6px;
+//   border-style: solid;
+//   border-width: 6px 6px 0 6px;
+//   border-color: var(--back-color) transparent transparent transparent;
+// }
