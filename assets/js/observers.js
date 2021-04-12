@@ -2,7 +2,7 @@ const fader1 = $('#fader1');
 const fader2 = $('#fader2');
 const fader3 = $('#fader3');
 const sectionOptions = {
-  rootMargin: '-400px',
+  rootMargin: '-200px',
   threshold: 0,
 };
 
